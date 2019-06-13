@@ -1,0 +1,40 @@
+<div class="row bg">
+  <div class="col-12">
+      <div class="row bgt">
+          <div class=" col-12">LOCAL WEATHER REPORT</div>
+        </div>
+        <div class="row">
+          <div class=" col-12"><h3>Your local Weather</h3></div>
+        </div>
+        <div class="row">
+          <div class=" col-12"><h3 *ngIf="file">{{file?.name}}</h3></div>
+        </div>
+        <div class="row">
+          <div class=" col-12 deg"><div *ngIf="file"><h3>{{(file?.main?.temp - 273.15) | number:0 }}</h3></div></div>
+        </div>
+        <div class="row">
+            <div *ngIf="file" class="col-lg-12">
+              
+              <div *ngFor="let i of file?.weather">
+                 {{ i.main }}
+                 {{ i.description }}
+                 <img src="http://openweathermap.org/img/w/{{ i.icon }}.png">
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class=" col-12">test</div>
+        </div>
+        <div class="row">
+          <div class=" col-12">
+            <div class="row">
+              <div class="col-4">test</div>
+              <div class="col-4">test</div>
+              <div class="col-4">test</div>
+  
+            </div>
+          </div>
+        </div>
+      
+  </div>
+  </div>

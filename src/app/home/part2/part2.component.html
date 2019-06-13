@@ -1,0 +1,25 @@
+<div class="row bg">
+
+  <div class="col-12">
+  <div class="row">
+    <div class="col-12">
+        
+              
+              <input [(ngModel)]="location"  type="text" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Destination">
+              <button (click)="handleClick()" type="button" class="btn btn-primary mb-2">Confirm</button>
+            
+    </div>
+  </div>
+    <div class="row" *ngIf='url1'>
+      <div class="col-lg-12">
+        <div class="img">
+          <iframe id="inlineFrameExample" title="Inline Frame Example" [src]='url1' height="400px" width="auto">
+          </iframe>
+        </div>
+      </div>
+      
+
+    </div>
+  
+  </div>
+</div>

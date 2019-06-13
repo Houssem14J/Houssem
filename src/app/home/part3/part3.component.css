@@ -1,0 +1,11 @@
+.bg{
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    height: 600px;
+    }
+
+.row{
+    padding-top: 20px 
+}

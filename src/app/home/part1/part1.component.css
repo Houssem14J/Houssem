@@ -1,0 +1,19 @@
+.bg{
+margin: 10px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.39);
+color: white;
+height: 600px;
+}
+.bgt{
+    font-size: 19px;
+    color: #106a94;
+    background-color: #4ea8c0
+}
+.marg{
+    margin-bottom: 30px
+}
+.deg{
+    font-size: 103px ; 
+
+}

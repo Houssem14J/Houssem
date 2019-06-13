@@ -1,0 +1,11 @@
+<div class="bg">
+<div class="container">
+  <div class="row">
+      <div class="col-3"><app-part3></app-part3></div>
+    <div class="col-6"><app-part2 (fonction)="getSearch($event)"></app-part2></div>
+    <div class="col-3 " *ngIf="clicked"><app-part1  [data]="search"></app-part1></div>
+    <div class="col-3 " *ngIf="!clicked"><app-part1  [data]="search"></app-part1></div>
+
+  </div>
+</div>
+</div>
